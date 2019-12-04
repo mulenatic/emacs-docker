@@ -8,6 +8,8 @@ then
     exit 1
 fi
 
+#TestAddons
+
 echo "List of given parameters, will be used as files which will be opened by emacs from directory $EMACS_DIR: $@"
 
 declare -a files=("$EMACS_DIR/");
