@@ -23,6 +23,6 @@ echo $files[0] $files[1]
 echo "${files[@]}"
 echo "${files[@]/#/ }"
 
+#scriptAddons
 
 exec emacs "${files[@]}"
-#exec emacs "${files[@]/#/ }"
