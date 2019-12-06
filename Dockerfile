@@ -11,8 +11,9 @@ RUN useradd -m -d /home/docker -s /bin/bash docker; \
 	chown -R docker /home/docker;
 USER docker
 ENV git.email="mulenatic@gmail.com" \
-  git.user="Thomas Kaczmarek" \
-  PATH="/home/docker/.cask/bin:$PATH"
+	git.user="Thomas Kaczmarek" \
+	PATH="/home/docker/.cask/bin:$PATH" \
+	TERM=xterm-256color
 RUN   git config --global user.email $git.user; git config --global user.name $git.user; \
 	curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python; \
 	cd /home/docker/.emacs.d; cask install

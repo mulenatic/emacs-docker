@@ -27,8 +27,5 @@
 (depends-on "yasnippet")
 (depends-on "zenburn-theme")
 (depends-on "company-shell")
-(depends-on "company-irony")
-(depends-on "irony")
 (depends-on "helm-projectile")
-(depends-on "magit")
 (depends-on "yaml-mode")

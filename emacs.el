@@ -8,7 +8,7 @@
 ;;company
 (global-company-mode)
 
-(add-to-list 'company-backends '(company-shell company-shell-env company-irony))
+(add-to-list 'company-backends '(company-shell company-shell-env))
 
 ;; eliminate long "yes" or "no" prompts
 (fset 'yes-or-no-p 'y-or-n-p)
