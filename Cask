@@ -29,3 +29,4 @@
 (depends-on "company-shell")
 (depends-on "helm-projectile")
 (depends-on "yaml-mode")
+(depends-on "ztree")
