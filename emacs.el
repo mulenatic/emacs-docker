@@ -19,3 +19,9 @@
 (if window-system
     (tool-bar-mode -1) )
 
+;; (setq helm-projectile-fuzzy-match nil)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(helm-projectile-on)
+
