@@ -25,3 +25,7 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (helm-projectile-on)
 
+;; Use C-x O to go to previous window.
+(global-set-key (kbd "C-x O") (lambda ()
+				(interactive)
+				(other-window -1)))
