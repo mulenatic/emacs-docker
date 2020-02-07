@@ -29,3 +29,10 @@
 (global-set-key (kbd "C-x O") (lambda ()
 				(interactive)
 				(other-window -1)))
+
+(winner-mode 1)
+
+;; Setup workgroups https://github.com/tlh/workgroups.el
+(require 'workgroups)
+(setq wg-prefix-key (kbd "C-c w"))
+(workgroups-mode 1)

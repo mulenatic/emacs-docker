@@ -5,6 +5,7 @@ EMACS_DIR="/emacsDocuments";
 if [ ! -d "$EMACS_DIR" ];
 then
     echo "No volume bound to $EMACS_DIR. Please start the container with \"-v <desired path to directory on the host>:$EMACS_DIR\"";
+    echo "Alternatively provide a URL to a github repo which is going to be checked out and opened as argument.";
 
     if [ $# -eq 1 ];
     then

@@ -30,3 +30,4 @@
 (depends-on "helm-projectile")
 (depends-on "yaml-mode")
 (depends-on "ztree")
+(depends-on "workgroups")
