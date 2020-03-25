@@ -32,6 +32,8 @@
 
 (winner-mode 1)
 
+(setq wg-morph-on nil)
+
 ;; Setup workgroups https://github.com/tlh/workgroups.el
 (require 'workgroups)
 (setq wg-prefix-key (kbd "C-c w"))
