@@ -1,6 +1,6 @@
 # Use the newest emacs version from silex as base
 FROM silex/emacs
-RUN apt-get update; apt-get install -y python git sudo; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
+RUN apt-get update; apt-get install -y python git sudo pass; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
 COPY ["emacs.el", "/home/docker/.emacs.el"]
 COPY ["startup.sh", "/home/docker"]
 COPY ["Cask", "/home/docker/.emacs.d/Cask"]

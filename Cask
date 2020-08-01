@@ -31,3 +31,5 @@
 (depends-on "yaml-mode")
 (depends-on "ztree")
 (depends-on "workgroups")
+(depends-on "pass")
+(depends-on "helm-pass")
